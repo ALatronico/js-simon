@@ -20,6 +20,11 @@ let numeriGenerati = getUniqueRandomNumber(1, 99, 5)
 //per controllare i numeri generati in console
 console.log(' i numeri generati sono ', numeriGenerati)
 
+//Assegno ogni elelmento della li
+for(let i = 0; i < boxes.length; i++){
+  boxes[i].innerHTML = numeriGenerati[i];
+}
+
 //Faccio partire il timer di 10 secondi
 let seconds = 10;
 timer.innerHTML = seconds--;
@@ -77,7 +82,7 @@ btn.addEventListener('click', () => {
   }
 
   message.classList.toggle('hide')
-  
+
 })
 
 
